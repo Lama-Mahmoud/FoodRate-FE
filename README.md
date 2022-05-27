@@ -1,1 +1,1 @@
-# Rateme-FE
+# FoodRate-FE
