@@ -4,8 +4,11 @@ body{
 
 div{
 	border-radius:2%;
-	border:2px solid black;
 	padding:1%;
+	background-color: #FFF;
+	flex-direction:column;
+	display:flex;
+	box-shadow: 5px 10px 8px #888888;
 }
 
 
