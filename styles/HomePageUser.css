@@ -1,3 +1,11 @@
+@media only screen and (min-width: 570px)
+{
+	.container{
+		display:flex;
+	}
+}
+
+
 
 #one{
 	background-image: url("foodBg.png");
@@ -16,7 +24,6 @@ body{
 }
 
 .container{
-	display:flex;
 	margin-top:2%;
 }
 
@@ -49,4 +56,6 @@ h1{
 .Rating{
 	display:flex;
 }
+
+
 
