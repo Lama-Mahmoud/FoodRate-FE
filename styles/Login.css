@@ -1,8 +1,9 @@
 body{
-	margin:auto;
+	margin:20%;
 }
 
 div{
 	border-radius:2%;
-	box-shadow: 0 0 1em #990904;
+	border:2px solid black;
+	padding:2%;
 }
