@@ -36,9 +36,14 @@ body{
 
 
 img{
-	width:10%
+	width:10%;
 }
 
 h1{
 	margin:0;
 }
+
+.Rating{
+	display:flex;
+}
+
