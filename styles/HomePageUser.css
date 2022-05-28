@@ -17,12 +17,19 @@ body{
 
 .container{
 	display:flex;
+	margin-top:2%;
 }
 
 .ResturantView{
 	flex-basis:30%;
-	padding:2%;
 	border: 2px solid #990904;
 	margin-left:2%;
 	margin-right:2%;
+}
+
+.Restaurants{
+	background-image: url("dummyImage.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
