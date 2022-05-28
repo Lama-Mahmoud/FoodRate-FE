@@ -29,7 +29,7 @@ body{
 
 .ResturantView{
 	flex-basis:30%;
-	border: 2px solid #990904;
+	border: 2px solid black;
 	margin-left:2%;
 	margin-right:2%;
 }
