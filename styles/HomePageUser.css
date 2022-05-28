@@ -1,0 +1,11 @@
+
+#one{
+	background-image: url("foodBg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	position: relative;
+	padding:20%;
+	
+}
