@@ -2,3 +2,12 @@ body{
 	margin-right:10%;
 	margin-left:10%;
 }
+
+.master{
+	background-image:linear-gradient(white,white),url(./images/food Bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	position: relative;
+}
