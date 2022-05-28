@@ -57,5 +57,12 @@ h1{
 	display:flex;
 }
 
+.Description{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	max-width: 30ch;
+}
+
 
 
