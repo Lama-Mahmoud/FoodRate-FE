@@ -29,7 +29,7 @@ body{
 
 .ResturantView{
 	flex-basis:30%;
-	box-shadow: 0 0 1em #990904;
+	box-shadow: 0 0 1em black;
 	margin-left:2%;
 	margin-right:2%;
 }
@@ -51,10 +51,12 @@ img{
 
 h1{
 	margin:0;
+	padding:2%;
 }
 
 .Rating{
 	display:flex;
+	padding:2%;
 }
 
 .Description{
@@ -62,6 +64,7 @@ h1{
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	max-width: 30ch;
+	padding:2%;
 }
 
 
