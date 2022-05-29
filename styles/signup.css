@@ -24,7 +24,7 @@ button {
   background-color: #AD0503;
   color:white;
   padding:0.5%;
-  width:95%;
+  width:96%;
   font-size:2em;
   border-radius: 5px;
 }
@@ -33,7 +33,7 @@ button {
 	background-color:white;
 	margin-right:30%;
 	margin-left:30%;
-	margin-top:7%;
+	margin-top:3%;
 	padding:2%;
 	box-shadow: 0 0 10px #990904;
 }
