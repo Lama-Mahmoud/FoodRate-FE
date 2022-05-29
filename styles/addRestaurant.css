@@ -23,3 +23,16 @@ input[type=text]:focus,input[type=number]:focus,textarea:focus {
 	padding:2%;
 	box-shadow: 0 0 10px #990904;
 }
+
+
+button{
+	
+  background-color: #AD0503;
+  color:white;
+  padding:0.5%;
+  width:25%;
+  font-size:2em;
+  border-radius: 5px;
+  position:absolute;
+  right:10%;
+}
