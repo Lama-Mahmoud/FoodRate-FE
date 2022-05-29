@@ -9,8 +9,10 @@
 <body>
 <div class="container">
 	<div class="profile">
-		<label for="profile"><b>Profile</b></label>
-		<input type="file" name="myImage" accept="image/png, image/jpeg">choose profile pic</input>
+	<label for="profile"><b>Profile</b></label>
+	<button class="pic" onclick="document.getElementById('getFile').click()">Choose Profile Picure </button>
+	
+	<input type='file' id="getFile" style="display:none" accept="image/png, image/jpeg">
 
 
 	</div>
@@ -32,7 +34,7 @@
 		<br>
 		<input type="number" placeholder="Enter Phone Number" name="Phone" required>
 		<br>
-        <input type="button" value="Add">
+        <button> Add</button>
 
 	</div>
 </div>

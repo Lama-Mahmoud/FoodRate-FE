@@ -26,7 +26,7 @@ input[type=text]:focus,input[type=number]:focus,textarea:focus {
 }
 
 
-input[type=button]{
+button{
 	
   background-color: #AD0503;
   margin-right:10%;
@@ -35,7 +35,18 @@ input[type=button]{
   color:white;
   padding:0.5%;
   width:100%;
-  font-size:1em;
+  font-size:2em;
   border:none;
   border-radius: 5px;
+}
+
+.profile{
+	
+	display: inline-block;
+	background-color:white;
+	margin-right:10%;
+	margin-left:30%;
+	margin-top:3%;
+	padding:2%;
+	
 }
