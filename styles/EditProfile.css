@@ -3,14 +3,12 @@ body{
 	margin-right:10%;
 }
 
-.container{
-	align-items:center;
-}
-
 .info{
 	padding:1%;
 	flex-basis:50%;
 	display: inline-block;
+	align-self: flex-start;
+	margin-top:2%;
 }
 
 .profile{
@@ -33,4 +31,18 @@ input[type=text],input[type=email]{
 input[type=text]:focus,input[type=email]:focus{
   background-color: #f1f1f1;
   outline: none;
+}
+
+img{
+	border:none;
+	border-radius:50%;
+	width:50%;
+}
+
+button {
+	background-color: #AD0503;
+	color:white;
+	padding:0.5%;
+	width:30%;
+	border-radius: 5px;
 }
