@@ -1,0 +1,32 @@
+body{
+	margin-left:10%;
+	margin-right:10%;
+}
+
+.info{
+	padding:1%;
+	flex-basis:50%;
+	display: inline-block;
+}
+
+.profile{
+	padding:1%;
+	flex-basis:50%;
+	display: inline-block;
+}
+
+input[type=text],input[type=email]{
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border-radius: 5px;
+  border:none;
+  background: #ccc;
+}
+
+
+input[type=text]:focus,input[type=email]:focus{
+  background-color: #f1f1f1;
+  outline: none;
+}
