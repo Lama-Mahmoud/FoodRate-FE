@@ -3,18 +3,19 @@
 
 <html>
 <head>
-	<link rel="stylesheet" href="styles/addRestaurant.css">
+	<link rel="stylesheet" href="styles/Admin.css">
 
 </head>
 <body>
 <div class="container">
-	<div class="profile">
+	<div class="profile" align="center">
 	<label for="profile"><h1 align="center">Profile</h1></label>
-	<img src="styles/dummyimage.png"></img>
-	<button class="pic" onclick="document.getElementById('getFile').click()">Choose Profile Picure </button>
+	<img class="ProPic" src="styles/dummyimage.png" ></img>
+	<div>
+	<button class="pic" onclick="document.getElementById('getFile').click()" align="center">Choose Profile Picure </button>
 	
 	<input type='file' id="getFile" style="display:none" accept="image/png, image/jpeg">
-
+	</div>
 
 	</div>
 
@@ -35,10 +36,10 @@
 		<br>
 		<input type="number" placeholder="Enter Phone Number" name="Phone" required>
 		<br>
-        <button> Add</button>
+        <button id="add"> Add</button>
 
 	</div>
-</div>
+</div>	
 </body>
 </html>
  

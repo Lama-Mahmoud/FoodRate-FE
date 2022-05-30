@@ -1,7 +1,8 @@
 body{
   font-family: Helvetica, sans-serif;
   margin-right:10%;
-  background-color:#999999;
+  margin-left:10%;
+  background-color:#f1f1f1;
   
 }
 div{
@@ -13,4 +14,65 @@ table{
 }
 th{
 	background-color:#ccc;
+}
+
+input[type=text]:focus,input[type=number]:focus,textarea:focus,button:hover {
+  background-color: #ccc;
+  outline: none;
+}
+
+input[type=text],input[type=number],textarea{
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border-radius: 5px;
+  border:none;
+  background: #f1f1f1;
+}
+
+
+.profile{
+	
+	display: inline-block;
+	background-color:white;
+	margin-right:30%;
+	margin-left:30%;
+	width:40%;
+	padding:2%;
+	
+}
+
+.info{
+	display: inline-block;
+	background-color:white;
+	margin-right:30%;
+	margin-left:30%;
+	width:40%;
+	padding:2%;
+	
+}
+
+.ProPic{
+	width:150px;
+	height:150px;
+	margin-bottom:5%;
+}
+
+#add{
+	width:30%;
+	margin-right:35%;
+	margin-left:35%;
+}
+
+button{
+	background-color:#f1f1f1;
+	border-radius: 5px;
+	font-size:1.5em;
+	border:none;
+}
+
+textarea {
+   font-family: inherit;
+   font-size: inherit;
 }
