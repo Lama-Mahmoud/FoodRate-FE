@@ -7,7 +7,7 @@ body{
 	display:flex;
 }
 
-img{
+.top{
 	flex-basis:30%;
 }
 
@@ -19,5 +19,16 @@ img{
 .write{
 	border:1px solid black;
 	padding:1%;
+	margin-top:1%;
+}
+
+.previousComments{
+	border:1px solid black;
+	padding-left:0.5%;
+	margin-top:1%;
+}
+.comment{
+	border:1px solid black;
+	padding-left:0.5%;
 	margin-top:1%;
 }
