@@ -3,6 +3,10 @@ body{
 	margin-right:10%;
 }
 
+.container{
+	align-items:center;
+}
+
 .info{
 	padding:1%;
 	flex-basis:50%;

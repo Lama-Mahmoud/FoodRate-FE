@@ -7,9 +7,10 @@
 
 <body>
 <div class="container">
-		<div class="profile">
+		<div class="profile" align="center">
 		<label for="profile"><h1 align="center">Profile</h1></label>
 		<img src="styles/dummyimage.png"></img>
+		<br>
 		<button class="pic" onclick="document.getElementById('getFile').click()">Choose New Profile Picure </button>
 		
 		<input type='file' id="getFile" style="display:none" accept="image/png, image/jpeg">
@@ -17,14 +18,16 @@
 	<div class="info">
 		<label for="fname"><b>First Name</b></label>
 		<input type="text" placeholder="First Name" name="fname" >
-
+		<br>
 
 		<label for="lname"><b>Last Name</b></label>
 		<input type="text" placeholder="Last Name" name="lname" >
+		<br>
 
 		<label for="email"><b>Email</b></label>
 		<input type="email" placeholder="Enter Email" name="email" >
 	</div>
+		<br>
 	<button >Change Info</button>
 </div>
 </body>
