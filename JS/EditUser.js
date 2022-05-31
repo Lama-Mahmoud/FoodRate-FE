@@ -36,7 +36,7 @@ if(!profile_pic)
 }
 
 let datanew = new FormData();
-datanew.append("email", email_field.value);
+datanew.append("email", data.email);
 datanew.append("password", password_field.value);
 atanew.append("first_name",first_name.value);
 atanew.append("last_name",last_name.value);
