@@ -1,14 +1,11 @@
 const email_field = document.getElementById("email"),
-  password_field = document.getElementById("password"),
+  password_field = document.getElementById("pass"),
   submit_btn = document.getElementById("login");
 
 
+	console.log("1");
 
 submit_btn.onclick = () => {
-	if(email_field.length==0 || password_field.length==0)
-		{
-			alert("error!! wrong email or password");
-		}
 	
   let data = new FormData();
   data.append("email", email_field.value);
