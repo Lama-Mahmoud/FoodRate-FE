@@ -1,0 +1,194 @@
+@media only screen and (min-width: 570px)
+{
+	.container{
+		display:flex;
+	}
+}
+
+
+.container{
+	margin-top:2%;
+	background-color:#f1f1f1;
+}
+
+#one{
+	background-image: url("foodBg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	position: relative;
+	padding:10%;
+	font-size:2em;
+}
+
+body{
+  font-family: Helvetica, sans-serif;
+  margin-right:10%;
+  margin-left:10%;
+  background-color:#f1f1f1;
+
+  
+}
+div{
+  background-color:white;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
+.info{
+	padding:1%;
+	flex-basis:50%;
+	display: inline-block;
+	align-self: flex-start;
+	margin-top:2%;
+}
+
+.profile{
+	padding:1%;
+	flex-basis:50%;
+	display: inline-block;
+}
+
+input[type=text],input[type=email]{
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border-radius: 5px;
+  border:none;
+  background: #f1f1f1;
+}
+
+
+input[type=text]:focus,input[type=email]:focus{
+  background-color: #ccc;
+  outline: none;
+}
+
+.propic{
+	width:100%;
+	margin:0;
+	height:60%;
+}
+
+.star{
+	width:10%;
+	height:10%;
+	
+}
+
+.pic{
+	border:none;
+	border-radius:50%;
+	width:50%;
+}
+
+button {
+	background-color: #ccc;
+	color:black;
+	padding:0.5%;
+	width:50%;
+	border-radius: 5px;
+	border:none;
+	font-size:1.2em;
+	margin:10%;
+}
+
+button:hover{
+	background-color:#f1f1f1;
+}
+
+.ResturantView{
+	flex-basis:30%;
+	margin-left:2%;
+	margin-right:2%;
+}
+
+.ResturantView:hover{
+	box-shadow: 0 0 1em black;
+	
+}
+
+h4{
+	margin:0;
+	margin-top:1.5%;
+}
+
+.Restaurants{
+	background-image: url("dummyImage.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.Rating{
+	display:flex;
+}
+
+
+.super{
+	padding:10%;
+}
+
+#changeInfo{
+	width:30%;
+	margin:5%;
+}
+
+.head{
+	display:flex;
+	padding:2%;
+}
+
+.top{
+	flex-basis:25%;
+}
+
+.Restaurant{
+	flex-basis:75%;
+	margin-left:2%;
+	margin-bottom:2%;
+}
+
+.comment{
+	padding:2%;
+}
+
+.write{
+	border:1px solid #ccc;
+	padding:2%;
+}
+
+#post{
+	width:15%;
+	margin:0%;
+}
+
+.previousComments{
+	border-bottom:1px solid #ccc;
+}
