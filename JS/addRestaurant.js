@@ -12,7 +12,7 @@ add.addEventListener("click", () => {
   data.append("rest_name", name);
   data.append("rest_desc", description);
   data.append("rest_pic", image);
-  console.log(data);
+
   let headers = {};
   headers.Authorization = "Bearer " + token;
   axios({
