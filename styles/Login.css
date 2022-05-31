@@ -1,15 +1,35 @@
-body{
-	background-image:url("LoginBackground.jpg");
-	background-repeat: repeat;
-	background-size: auto;
+
+.main {
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-div{
+
+.main::before {    
+      content: "";
+      background-image: url('LoginBackground.jpg');
+      background-size: auto;
+	  background-repeat: repeat;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.8;
+}
+
+.input{
+	
+	position: relative;
 	border-radius:2%;
 	padding:1%;
 	background-color: #FFF;
 	flex-direction:column;
 	display:flex;
-	box-shadow: 0 0 10px #990904;
+	width:30%;
 	margin-right:35%;
 	margin-left:35%;
 	margin-top:10%;
@@ -30,7 +50,7 @@ a{
 .text:focus{
 	outline: none !important;
     border:1px solid #ccc;
-    box-shadow: 0 0 10px #990904;
+    box-shadow: 0 0 10px black;
 }
 
 button{

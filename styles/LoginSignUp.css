@@ -1,17 +1,41 @@
 body{
-	background-image:url("LoginBackground.jpg");
-	background-repeat: repeat;
-	background-size: auto;
+	
+  font-family: Helvetica, sans-serif;
 }
-div{
+.main {
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main::before {    
+      content: "";
+      background-image: url('LoginBackground.jpg');
+      background-size: auto;
+	  background-repeat: repeat;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.8;
+}
+
+.input{
+	
+	position: relative;
 	border-radius:2%;
 	padding:1%;
-	background-color: #f1f1f1;
+	background-color: #FFF;
 	flex-direction:column;
 	display:flex;
+	width:30%;
 	margin-right:35%;
 	margin-left:35%;
-	margin-top:10%;
+	margin-top:5%;
 }
 
 a{
@@ -24,8 +48,13 @@ a{
 	border-radius:4px;
 	border:1px solid #f1f1f1;
 	padding:2%;
-	margin:2%;
+	margin-top:2%;
+	margin-bottom:2%;
 }
+lable{
+	margin-top:2%;
+}
+
 .text:focus,input[type=text]:focus, input[type=password]:focus, input[type=date]:focus {
 	outline: none !important;
     border:1px solid #ccc;
@@ -39,6 +68,9 @@ button{
 	border: none;
 	border-radius:10px;
 	padding:2%;
+	width:80%;
+	margin-right:10%;
+	margin-left:10%;
 	font-size:17px;
 }
 button:hover{
