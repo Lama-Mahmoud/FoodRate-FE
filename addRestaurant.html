@@ -4,54 +4,55 @@
 <html>
 <head>
 	<link rel="stylesheet" href="styles/Admin.css">
-	<script src="JS/addRestaurant.JS"></script>
-
+	
 </head>
 <body>
-
-<ul>
-  <li><a href="View Pending Comments.html">Pending Comments|</a></li>
-  <li><a href="addRestaurant.html">Add Restaurant|</a></li>
-  <li><a href="ViewUsers.html">View Users</a></li>
-</ul>
-
-
-
-
-<div class="container">
 	
-	<div class="profile" align="center">
-	<label for="profile"><h1 align="center">Profile</h1></label>
-	<img class="ProPic" src="styles/dummyimage.png" ></img>
-	<div>
-	<button class="pic" onclick="document.getElementById('getFile').click()" align="center">Choose Profile Picure </button>
+	<ul>
+		<li><a href="View_Pending_Reviews.html">Pending Comments|</a></li>
+		<li><a href="addRestaurant.html">Add Restaurant|</a></li>
+		<li><a href="ViewUsers.html">View Users</a></li>
+	</ul>
 	
-	<input type='file' id="getFile" style="display:none" accept="image/png, image/jpeg">
-	</div>
+	
+	
+	
+	<div class="container">
+		
+		<div class="profile" align="center">
+			<label for="profile"><h1 align="center">Profile</h1></label>
+			<img class="ProPic" src="styles/dummyimage.png" ></img>
+			<div>
+				<button class="pic" onclick="document.getElementById('getFile').click()" align="center">Choose Profile Picure </button>
+				
+				<input type='file' id="getFile" style="display:none" accept="image/png, image/jpeg">
+			</div>
+			
+		</div>
+		
+		<div class="info">
+			<label for="name"><b>Name</b></label>
+			<br>
+			<input type="text" placeholder="Restaurant Name" id="name" required>
+			
+			<label for="Description"><b>Description</b></label>
+			<br>
+			<textarea placeholder="Description" id="Description" required></textarea>
+			
+			<label for="location"><b>Location</b></label>
+			<br>
+			<input type="text" placeholder="Enter Location" id="location" required>
+			
+			<label for="Phone"><b>Phone</b></label>
+			<br>
+			<input type="number" placeholder="Enter Phone Number" id="Phone" required>
+			<br>
+			<button id="add"> Add</button>
+			
+		</div>
+	</div>	
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-	</div>
-
-	<div class="info">
-		<label for="name"><b>Name</b></label>
-		<br>
-		<input type="text" placeholder="Restaurant Name" id="name" required>
-
-		<label for="Description"><b>Description</b></label>
-		<br>
-		<textarea placeholder="Description" id="Description" required></textarea>
-
-		<label for="location"><b>Location</b></label>
-		<br>
-		<input type="text" placeholder="Enter Location" id="location" required>
-
-		<label for="Phone"><b>Phone</b></label>
-		<br>
-		<input type="number" placeholder="Enter Phone Number" id="Phone" required>
-		<br>
-        <button id="add"> Add</button>
-
-	</div>
-</div>	
+	<script src="JS/addRestaurant.JS" defer></script>
 </body>
 </html>
- 
