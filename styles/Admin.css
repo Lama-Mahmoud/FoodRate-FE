@@ -116,9 +116,13 @@ textarea {
   margin-left: 50px;
 }
 
-span{
-	font-size:30px;
+divspan{
+	font-size:35px;
 	cursor:pointer;
-	margin-left:2%;
-	margin-top:3%;
+	margin-left:5%;
+	margin-top:35;
 }
+#title{
+	margin-left:35%;
+}
+
