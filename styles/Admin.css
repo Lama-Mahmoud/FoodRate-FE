@@ -10,7 +10,11 @@ div{
 }
 
 table{
-	padding:1%;
+	padding:4%;
+	border-spacing: 5%;
+	width:100%;
+	background-color:white;
+	border-spacing:10px;
 }
 th{
 	background-color:#ccc;
