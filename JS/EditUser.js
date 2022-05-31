@@ -1,3 +1,4 @@
+window.onload=function(){
 submit_btn = document.getElementById("signup");
   
 let email_field = document.getElementById("email"),
@@ -53,4 +54,5 @@ axios({
   }).then(function (affected_rows) {
       console.log(affected_rows);
   });
+}
 }
