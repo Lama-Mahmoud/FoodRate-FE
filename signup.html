@@ -4,7 +4,8 @@
 <html>
 <head>
 	<link rel="stylesheet" href="styles/LoginSignUp.css">
-
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="JS/SignUp.js"defer></script>
 </head>
 <body>
  
@@ -12,7 +13,7 @@
 	<div class="input">
       <h1>Sign Up</h1>
       <p>Please fill in this form to create an account.</p>
-      
+
       <button onclick="document.getElementById('getFile').click()">Choose New Profile Picure </button>
 		
       <input type='file' id="getFile" style="display:none" accept="image/png, image/jpeg">
@@ -34,14 +35,14 @@
       <input type="date" placeholder="Repeat Password" id="DOB" required>
       
       <label for gender="gender"><b>Gender</b></label>
-      <lable></lable>
-		  <input type="radio" name="rate">female
+      <lable>
+		  <input type="radio" name="gender">female
 		  </label>
 		  <label >
-		  <input type="radio" name="rate">male
+		  <input type="radio" name="gender">male
 		  </label>
       <label>
-		  <input type="radio" name="rate">other
+		  <input type="radio" name="gender">other
 		  </label>
 
       <div class="clearfix">
