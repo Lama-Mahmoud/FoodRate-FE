@@ -11,11 +11,23 @@
 	background-color:#f1f1f1;
 }
 
+#one{
+	background-image: url("foodBg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+	position: relative;
+	padding:10%;
+	font-size:2em;
+}
+
 body{
   font-family: Helvetica, sans-serif;
   margin-right:10%;
   margin-left:10%;
   background-color:#f1f1f1;
+
   
 }
 div{
@@ -115,9 +127,18 @@ button {
 	
 }
 
+h4{
+	margin:0;
+	margin-top:1.5%;
+}
+
 .Restaurants{
 	background-image: url("dummyImage.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+.Rating{
+	display:flex;
 }
