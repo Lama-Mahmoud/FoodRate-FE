@@ -7,13 +7,6 @@ add.addEventListener("click", () => {
   const description = document.getElementById("Description").value;
   const image = document.getElementById("getFile").files[0];
 
-  //   const fileReader = new FileReader();
-  //   let base64_image = "";
-  //   fileReader.onload = () => {
-  //     base64_image = fileReader.result; // base64
-  //   };
-  //   fileReader.readAsDataURL(image);
-
   let data = new FormData();
 
   data.append("rest_name", name);
@@ -28,13 +21,6 @@ add.addEventListener("click", () => {
     headers: headers,
     data: data,
   }).then(function (response) {
-    console.log(response.data);
+    add.style.backgroundColor = "green";
   });
 });
-
-// function Add(){
-
-// let url = "http://localhost/";
-// let id = localStorage.getItem("user_id");
-// url += "?user_id=" + id;
-// }
