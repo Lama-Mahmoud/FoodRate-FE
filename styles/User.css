@@ -1,3 +1,15 @@
+@media only screen and (min-width: 570px)
+{
+	.container{
+		display:flex;
+	}
+}
+
+
+.container{
+	margin-top:2%;
+	background-color:#f1f1f1;
+}
 
 body{
   font-family: Helvetica, sans-serif;
@@ -61,22 +73,51 @@ input[type=text],input[type=email]{
 }
 
 
-input[type=text]:focus,input[type=email]:focus,button:hover{
+input[type=text]:focus,input[type=email]:focus{
   background-color: #f1f1f1;
   outline: none;
 }
 
-img{
+.propic{
+	width:100%;
+	margin:0;
+	height:60%;
+}
+
+.star{
+	width:10%;
+	height:10%;
+	
+}
+
+.pic{
 	border:none;
 	border-radius:50%;
 	width:50%;
 }
 
 button {
-	background-color: #ccc;
+	background-color: #f1f1f1;
 	color:white;
 	padding:0.5%;
 	width:30%;
 	border-radius: 5px;
-	outline:none;
+}
+
+.ResturantView{
+	flex-basis:30%;
+	margin-left:2%;
+	margin-right:2%;
+}
+
+.ResturantView:hover{
+	box-shadow: 0 0 1em black;
+	
+}
+
+.Restaurants{
+	background-image: url("dummyImage.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
