@@ -1,14 +1,16 @@
 
-const email_field = document.getElementById("email"),
+
+  submit_btn = document.getElementById("signup");
+  
+  
+submit_btn.onclick = () => {
+    const email_field = document.getElementById("email"),
   password_field = document.getElementById("psw"),
   first_name=document.getElementById("fname"),
   last_name=document.getElementById("lname"),
   DOB=document.getElementById("DOB"),
   profile_pic=document.getElementById("getFile").files[0];
-  submit_btn = document.getElementById("signup");
   
-  
-submit_btn.onclick = () => {
 	var gender;
     function displayRadioValue() {
         let ele = document.getElementsByName('gender');
