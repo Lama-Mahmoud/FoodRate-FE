@@ -30,7 +30,7 @@ submit_btn.onclick = () => {
 
     axios({
         method: "post",
-        url: "http://127.0.0.1/api/index.php?action=createUser",
+        url: "http://localhost/api/index.php?action=createUser",
         data: data,
       }).then(function (affected_rows) {
           console.log(affected_rows);
