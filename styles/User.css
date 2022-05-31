@@ -81,12 +81,12 @@ input[type=text],input[type=email]{
   display: inline-block;
   border-radius: 5px;
   border:none;
-  background: #ccc;
+  background: #f1f1f1;
 }
 
 
 input[type=text]:focus,input[type=email]:focus{
-  background-color: #f1f1f1;
+  background-color: #ccc;
   outline: none;
 }
 
@@ -109,11 +109,18 @@ input[type=text]:focus,input[type=email]:focus{
 }
 
 button {
-	background-color: #f1f1f1;
-	color:white;
+	background-color: #ccc;
+	color:black;
 	padding:0.5%;
-	width:30%;
+	width:50%;
 	border-radius: 5px;
+	border:none;
+	font-size:1.2em;
+	margin:10%;
+}
+
+button:hover{
+	background-color:#f1f1f1;
 }
 
 .ResturantView{
@@ -141,4 +148,47 @@ h4{
 
 .Rating{
 	display:flex;
+}
+
+
+.super{
+	padding:10%;
+}
+
+#changeInfo{
+	width:30%;
+	margin:5%;
+}
+
+.head{
+	display:flex;
+	padding:2%;
+}
+
+.top{
+	flex-basis:25%;
+}
+
+.Restaurant{
+	flex-basis:75%;
+	margin-left:2%;
+	margin-bottom:2%;
+}
+
+.comment{
+	padding:2%;
+}
+
+.write{
+	border:1px solid #ccc;
+	padding:2%;
+}
+
+#post{
+	width:15%;
+	margin:0%;
+}
+
+.previousComments{
+	border-bottom:1px solid #ccc;
 }
