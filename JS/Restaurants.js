@@ -17,6 +17,21 @@ function createAppendResaurants(data)
     count=0;
     data.forEach((element) => {
         
+        if(count==0)
+        {
+            let ResturantView=document.createElement("div");
+            ResturantView.classList.add("container");
+
+        }
+        let ResturantView=document.createElement("div");
+        ResturantView.classList.add("ResturantView");
+        ResturantView.id="R"+element.rest_id;
+        Restaurant=createElement(div);
+        Restaurant.innerHTML=``;
+        if(count==3){
+            count=0;
+        }
+
 
     });
 
