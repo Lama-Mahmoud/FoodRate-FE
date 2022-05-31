@@ -9,7 +9,6 @@ axios({
   headers: headers,
 }).then(function (response) {
   reviews_data = response.data;
-  console.log(reviews_data);
   createAppendReviewsRows(reviews_data);
 });
 
@@ -39,40 +38,50 @@ function createAppendReviewsRows(data) {
     reveiw_row.append(reveiw_rate_td);
 
     let reveiw_status_td = document.createElement("td");
-    reveiw_status_td.innerText = element.status;
+    let status_text = "";
+    if (element.status === 0) status_text = "Rejected";
+    else if (element.status === 1) status_text = "Accepted";
+    else status_text = "Pending";
+    reveiw_status_td.innerText = status_text;
+
+    review_id = element.review_id;
+    let accept_icon = document.createElement("span");
+    let reject_icon = document.createElement("span");
+    accept_icon.innerHTML = "&nbsp&nbsp&nbsp &#x1F44D;&nbsp&nbsp&nbsp&nbsp";
+    accept_icon.id = element.review_id;
+    reject_icon.innerHTML = "&#x1F44E;";
+    reject_icon.id = element.review_id;
+    accept_icon.onclick = (e) => {
+      data = new FormData();
+      data.append("review_id", e.target.id);
+      data.append("new_status", 1);
+      axios({
+        method: "post",
+        url: `http://127.0.0.1/api/index.php?action=updateReviewStatus&admin_id=${admin_id}`,
+        headers: headers,
+        data: data,
+      }).then(function () {
+        location.reload();
+      });
+    };
+    reject_icon.onclick = (e) => {
+      data = new FormData();
+      data.append("review_id", e.target.id);
+      data.append("new_status", 0);
+      axios({
+        method: "post",
+        url: `http://127.0.0.1/api/index.php?action=updateReviewStatus&admin_id=${admin_id}`,
+        headers: headers,
+        data: data,
+      }).then(function () {
+        location.reload();
+      });
+    };
+    reveiw_status_td.append(accept_icon);
+    reveiw_status_td.append(reject_icon);
+
     reveiw_row.append(reveiw_status_td);
 
     table.append(reveiw_row);
   });
 }
-
-// window.onload=function(){
-
-// 	function openNav() {
-// 	  document.getElementById("mySidenav").style.display = "block";
-// 	}
-
-// 	function closeNav() {
-// 	  document.getElementById("mySidenav").style.display = "none";
-// 	}
-
-// 	accept=document.getElementsByClassName("true");
-
-// 	reject=document.getElementsByClassName("false");
-
-// 	for(let i=0;i<reject.length;i++)
-// 	{
-// 		console.log("added");
-// 		accept[i].addEventListener("click",accepted);
-// 		reject[i].addEventListener("click",rejected);
-// 	}
-
-// 		function accepted()
-// 		{
-// 			alert("comment accepted");
-// 		}
-// 		function rejected()
-// 		{
-// 			alert("comment rejected");
-// 		}
-// }
