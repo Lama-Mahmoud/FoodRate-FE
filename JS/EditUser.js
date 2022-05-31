@@ -15,7 +15,7 @@ axios({
     url: `http://127.0.0.1/api/index.php?action=getOneUser&user_id=${user_id}`,
     headers: headers,
 }).then(function (response) {
-  userdata_data = response.data;
+  var userdata_data = response.data;
   addUserData(user_data);
 });
 function addUserData(data){
@@ -31,5 +31,8 @@ first_name=document.getElementById("fname").value,
 last_name=document.getElementById("lname").value,
 profile_pic=document.getElementById("getFile").files[0];
 
-axios
+axios({
+    
+
+});
 }
