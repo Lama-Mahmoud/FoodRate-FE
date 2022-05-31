@@ -1,10 +1,4 @@
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-
 body{
   font-family: Helvetica, sans-serif;
   margin-right:10%;
@@ -13,5 +7,76 @@ body{
   
 }
 div{
-	background-color:white;
+  background-color:white;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
+.info{
+	padding:1%;
+	flex-basis:50%;
+	display: inline-block;
+	align-self: flex-start;
+	margin-top:2%;
+}
+
+.profile{
+	padding:1%;
+	flex-basis:50%;
+	display: inline-block;
+}
+
+input[type=text],input[type=email]{
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border-radius: 5px;
+  border:none;
+  background: #ccc;
+}
+
+
+input[type=text]:focus,input[type=email]:focus,button:hover{
+  background-color: #f1f1f1;
+  outline: none;
+}
+
+img{
+	border:none;
+	border-radius:50%;
+	width:50%;
+}
+
+button {
+	background-color: #ccc;
+	color:white;
+	padding:0.5%;
+	width:30%;
+	border-radius: 5px;
+	outline:none;
 }
